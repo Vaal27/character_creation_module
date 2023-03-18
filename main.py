@@ -1,8 +1,8 @@
 from random import randint
 
 
-def attack(char_name, char_class):
-    result = ''
+def attack(char_name: str, char_class: str) -> str:
+    result: str = ''
     if char_class == 'warrior':
         result = (f'{char_name} нанёс урон противнику '
                   f'равный {5 + randint(3, 5)}')
